@@ -1,0 +1,54 @@
+{{#> html-email-layout title=subject}}
+  <tr>
+    <td class="content-block">
+      {{i18n 'common.hello' user.firstName}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      {{i18n 'membershipHost.intro'}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      <p>
+        {{{i18n 'membershipHost.documents'}}}
+        {{i18n 'membershipHost.documents2'}}
+      </p>
+      <ul>
+        <li>
+          {{i18n 'common.declaration'}}
+          <a href='http://docs.wwoof.fr/documents/declaration.pdf'>{{i18n 'common.french'}}</a> |
+          <a href='http://docs.wwoof.fr/documents/declaration.pdf'>{{i18n 'common.english'}}</a>
+        </li>
+        <li>
+          {{i18n 'common.charter'}}
+          <a href='http://docs.wwoof.fr/documents/charte-wwoofing.pdf'>{{i18n 'common.french'}}</a> |
+          <a href='http://docs.wwoof.fr/documents/wwoofing-charter.pdf'>{{i18n 'common.english'}}</a>
+        </li>
+        <li>
+          {{i18n 'common.rulesAndRegulations'}}
+          <a href='http://docs.wwoof.fr/documents/reglement-interieur-wwoofing.pdf'>{{i18n 'common.french'}}</a> |
+          <a href='http://docs.wwoof.fr/documents/wwoofing-rules-and-regulations.pdf'>{{i18n 'common.english'}}</a>
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      <p>
+        {{i18n "membershipHost.otherDocuments"}}
+      </p>
+      <ul>
+        <li><a href='http://docs.wwoof.fr/documents/selection-wwoofeur.pdf'>{{i18n "membershipHost.selectWwoofers"}}</a></li>
+        <li><a href='http://docs.wwoof.fr/documents/arrivee-wwoofeur.pdf'>{{i18n "membershipHost.arrival"}}</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      {{i18n "membershipHost.feedback"}}
+      {{{i18n "membershipHost.feedback2"}}}
+    </td>
+  </tr>
+{{/html-email-layout}}

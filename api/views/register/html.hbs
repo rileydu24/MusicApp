@@ -1,0 +1,22 @@
+{{#> html-email-layout title=subject}}
+  <tr>
+    <td class="content-block">
+      {{i18n 'common.hello' user.firstName}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      {{i18n 'register.thankYou'}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      {{{i18n 'register.nextStep'}}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
+      <a href="https://app.wwoof.fr/login" class="btn-primary" itemprop="url">{{i18n 'register.createProfile'}}</a>
+    </td>
+  </tr>
+{{/html-email-layout}}

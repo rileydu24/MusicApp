@@ -1,0 +1,59 @@
+{{#> html-email-layout title=subject}}
+  <tr>
+    <td class="content-block">
+      {{i18n 'common.hello' user.firstName}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      {{i18n 'membershipWwoofer.thankYou'}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      {{i18n 'membershipWwoofer.weArePleased'}}
+      {{i18n 'membershipWwoofer.youHaveAccess'}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      <p>
+        {{{i18n 'membershipWwoofer.faq'}}}
+      </p>
+      <ul>
+        <li>{{{i18n 'membershipWwoofer.chooseYourHost'}}}</li>
+        <li>{{{i18n 'membershipWwoofer.contactHost'}}}</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      <p>
+        {{i18n 'membershipWwoofer.documents'}}
+      </p>
+      <ul>
+        <li>
+          {{i18n 'common.charter'}}
+          <a href='http://docs.wwoof.fr/documents/charte-wwoofing.pdf'>{{i18n 'common.french'}}</a> |
+          <a href='http://docs.wwoof.fr/documents/wwoofing-charter.pdf'>{{i18n 'common.english'}}</a>
+        </li>
+        <li>
+          {{i18n 'common.rulesAndRegulations'}}
+          <a href='http://docs.wwoof.fr/documents/reglement-interieur-wwoofing.pdf'>{{i18n 'common.french'}}</a> |
+          <a href='http://docs.wwoof.fr/documents/wwoofing-rules-and-regulations.pdf'>{{i18n 'common.english'}}</a>
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      {{{i18n 'membershipWwoofer.facebook'}}}
+      {{i18n 'membershipWwoofer.facebook2'}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
+      <a href="https://app.wwoof.fr/hosts" class="btn-primary" itemprop="url">{{i18n 'membershipWwoofer.startContacting'}}</a>
+    </td>
+  </tr>
+{{/html-email-layout}}

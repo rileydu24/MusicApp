@@ -1,0 +1,33 @@
+<style>
+  html {
+    font-family: Arial;
+    font-size: 12px;
+  }
+</style>
+
+{{#each hostGroups}}
+  <h1>{{dtpName}}</h1>
+
+  {{#each hosts}}
+    <h2>{{farmName}}</h2>
+    <strong>{{firstName}} {{lastName}}</strong>
+
+    <p><strong>
+      {{address1}}<br>
+      {{#if address2}}
+        {{address2}}<br>
+      {{/if}}
+      {{zipCode}} {{city}}
+    </strong></p>
+
+    <p><strong>{{phone}}</strong></p>
+
+    <p><strong>{{email}}</strong></p>
+
+    <p>
+      {{fullDescription}}
+    </p>
+
+    <hr>
+  {{/each}}
+{{/each}}

@@ -1,0 +1,49 @@
+{
+  "env": "production",
+  "port": 3333,
+  "loggingLevel": {
+    "console": "warn",
+    "file": "info"
+  },
+  "mysql": {
+    "host": "10.128.2.79",
+    "port": 3306,
+    "user": "node-prod",
+    "password": "Ud3ahevJYpjdxGef",
+    "database": "wwoof"
+  },
+  "session_secret": [
+    "anewsecretthatnooneknows"
+  ],
+  "mysql_session": {
+    "host": "10.128.2.79",
+    "port": 3306,
+    "user": "node-prod",
+    "password": "Ud3ahevJYpjdxGef",
+    "database": "wwoof_session"
+  },
+  "braintree": {
+    "merchantId": "m8mn63zv6jcvqzd9",
+    "publicKey": "gz69wf3m5zvydp4x",
+    "privateKey": "84a57105677aef32ec2c2341a028242b"
+  },
+  "smtp": {
+    "host": "smtp.sendgrid.net",
+    "secure": false,
+    "port": 587,
+    "auth": {
+      "user": "sendgrid-prod",
+      "pass": "Fz89o6Zk3c1N"
+    }
+  },
+  "newrelic": {
+    "agent_enabled": true,
+    "license_key": "2851c3a4ac7100ee0ff195881d03d82326213282"
+  },
+  "aws": {
+    "accessKeyId": "AKIAIUJXZGUHZDRXGAAQ",
+    "secretAccessKey": "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",
+    "bucket": "wwoof-france",
+    "region": "us-east-1"
+  }
+}

@@ -1,0 +1,21 @@
+{{#> html-email-layout title=subject}}
+  <tr>
+    <td class="content-block">
+      {{i18n 'resetPassword.newPassword'}}
+      {{i18n 'resetPassword.changePassword'}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      <ul>
+        <li>{{i18n 'resetPassword.email'}}: {{user.email}}</li>
+        <li>{{i18n 'resetPassword.password'}}: {{newPassword}}</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
+      <a href="https://app.wwoof.fr/login" class="btn-primary" itemprop="url">{{i18n 'resetPassword.login'}}</a>
+    </td>
+  </tr>
+{{/html-email-layout}}
