@@ -1,0 +1,13 @@
+{{#> text-email-layout title=subject}}
+{{i18n 'common.hello' hostUser.firstName}}
+
+{{i18n 'contactHost.newMessage' wwooferUser.firstName}}
+
+{{{message}}}
+
+{{{i18n 'contactHost.replyText' wwooferUser.email}}}
+
+{{{i18n 'contactHost.viewProfile' wwooferUser.firstName}}}: {{{wwooferUrl}}}
+
+{{i18n 'contactHost.reminderText'}}: {{{hostUrl}}}
+{{/text-email-layout}}

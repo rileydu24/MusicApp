@@ -1,0 +1,24 @@
+{{#> html-email-layout title=subject}}
+  <tr>
+    <td class="content-block">
+      {{i18n 'common.hello' wwooferUser.firstName}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      {{{i18n 'contactHostCopy.forYourRecord' hostUser.firstName host.farmName}}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block ">
+      <blockquote>{{breaklines message}}</blockquote>
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
+      <a href="{{{hostUrl}}}" class="btn-primary" itemprop="url">
+        {{i18n 'contactHostCopy.viewProfile' hostUser.firstName}}
+      </a>
+    </td>
+  </tr>
+{{/html-email-layout}}

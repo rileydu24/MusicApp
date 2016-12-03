@@ -1,0 +1,24 @@
+{{#> html-email-layout title=subject}}
+  <tr>
+    <td class="content-block">
+      {{i18n 'common.hello' revieweeUser.firstName}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      {{i18n 'newReview.youHaveReceived' authorUser.firstName}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      <blockquote>{{breaklines review.text}}</blockquote>
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
+      <a href="{{{profileUrl}}}" class="btn-primary" itemprop="url">
+        {{i18n 'newReview.reply' authorUser.firstName}}
+      </a>
+    </td>
+  </tr>
+{{/html-email-layout}}

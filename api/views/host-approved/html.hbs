@@ -1,0 +1,38 @@
+{{#> html-email-layout title=subject}}
+  <tr>
+    <td class="content-block">
+      {{i18n 'common.hello' user.firstName}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      Notre équipe a validé votre candidature.
+      Nous pensons que vous remplissez l’ensemble des critères requis pour être hôte au sein de l’association
+      et que les wwoofeurs passeront de chouettes moments à vos côtés.
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      Pour terminer votre inscription et rendre votre profil visible, nous vous invitons à régler votre
+      cotisation annuelle directement sur notre site internet (paiement sécurisé).
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
+      <a href="https://app.wwoof.fr/memberships/new?type=H&itemCode=H" class="btn-primary" itemprop="url">Terminez votre inscription</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      Vous pouvez aussi nous faire parvenir un chèque à l’adresse ci-dessous en y mentionnant bien, au dos,
+      le nom sous lequel vous vous êtes inscrit.
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block aligncenter">
+      WWOOF France<br/>
+      La Beunaz<br/>
+      74500 Saint Paul en Chablais
+    </td>
+  </tr>
+{{/html-email-layout}}

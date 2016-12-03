@@ -1,0 +1,47 @@
+{
+  "env": "development",
+  "port": 3333,
+  "loggingLevel": {
+    "console": "debug",
+    "file": "debug"
+  },
+  "mysql": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "",
+    "database": "wwoof"
+  },
+  "session_secret": "anothersecret",
+  "mysql_session": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "",
+    "database": "wwoof_session"
+  },
+  "braintree": {
+    "merchantId": "cy3phgs9w9xdg8cq",
+    "publicKey": "xtbw97b9c8dn9shw",
+    "privateKey": "a2d02749263bee4206da719a91d0b2d9"
+  },
+  "smtp": {
+    "host": "smtp.sendgrid.net",
+    "secure": false,
+    "port": 587,
+    "auth": {
+      "user": "sendgrid-prod",
+      "pass": "Fz89o6Zk3c1N"
+    }
+  },
+  "newrelic": {
+    "agent_enabled": false,
+    "license_key": ""
+  },
+  "aws": {
+    "accessKeyId": "AKIAIUJXZGUHZDRXGAAQ",
+    "secretAccessKey": "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",
+    "bucket": "wwoof-france",
+    "region": "us-east-1"
+  }
+}

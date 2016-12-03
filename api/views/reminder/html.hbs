@@ -1,0 +1,18 @@
+{{#> html-email-layout title=subject}}
+  <tr>
+    <td class="content-block">
+      {{i18n 'common.hello' user.firstName}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      {{i18n 'reminder.isExpiring' expireDate}}
+      {{i18n 'reminder.maintainAccess'}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
+      <a href="{{{renewUrl}}}" class="btn-primary" itemprop="url">{{i18n 'reminder.renewNow'}}</a>
+    </td>
+  </tr>
+{{/html-email-layout}}

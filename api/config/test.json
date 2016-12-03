@@ -1,0 +1,48 @@
+{
+  "env": "test",
+  "port": 3333,
+  "testing": true,
+  "loggingLevel": {
+    "console": "fatal",
+    "file": "warn"
+  },
+  "mysql": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "",
+    "database": "wwoof_test"
+  },
+  "session_secret": "anothersecret",
+  "mysql_session": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "",
+    "database": "wwoof_session"
+  },
+  "braintree": {
+    "merchantId": "cy3phgs9w9xdg8cq",
+    "publicKey": "xtbw97b9c8dn9shw",
+    "privateKey": "a2d02749263bee4206da719a91d0b2d9"
+  },
+  "smtp": {
+    "host": "smtp.domain.com",
+    "secure": false,
+    "port": 587,
+    "auth": {
+      "user": "sender@domain.com",
+      "pass": "thepassword"
+    }
+  },
+  "newrelic": {
+    "agent_enabled": false,
+    "license_key": ""
+  },
+  "aws": {
+    "accessKeyId": "aws_key",
+    "secretAccessKey": "aws_secret",
+    "bucket": "aws_bucket",
+    "region": "aws_region"
+  }
+}
